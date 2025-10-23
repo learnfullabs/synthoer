@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "382c389dfeafe02f9414a56d84cfa954",
+    "content-hash": "36a1f8da4cc8c8eb0925798f2dca8b7b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3300,6 +3300,50 @@
                 }
             ],
             "time": "2023-07-12T21:21:09+00:00"
+        },
+        {
+            "name": "learnfullabs/ginsynth",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/learnfullabs/ginsynth.git",
+                "reference": "7589c5028d07b4d150014f0a7f2ed69a3527d963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/learnfullabs/ginsynth/zipball/7589c5028d07b4d150014f0a7f2ed69a3527d963",
+                "reference": "7589c5028d07b4d150014f0a7f2ed69a3527d963",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.0",
+                "drupal/gin": "^4.1",
+                "php": ">=8.1"
+            },
+            "type": "drupal-custom-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Learnful Labs",
+                    "homepage": "https://learnful.io"
+                }
+            ],
+            "description": "Gin subtheme with Bootstrap 5 integration to build a gin-infuzed front-end experiences",
+            "homepage": "https://github.com/learnfullabs/ginsynth",
+            "keywords": [
+                "admin",
+                "bootstrap",
+                "drupal",
+                "gin",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/learnfullabs/ginsynth/issues",
+                "source": "https://github.com/learnfullabs/ginsynth"
+            },
+            "time": "2025-10-23T13:47:33+00:00"
         },
         {
             "name": "masterminds/html5",

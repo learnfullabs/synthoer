@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/learnfullabs/ginsynth"
         }
     ],
     "require": {
@@ -33,7 +37,8 @@
         "drupal/token": "^1.16",
         "drupal/ultimate_cron": "^2.0@beta",
         "drupal/views_bootstrap": "^5.5@RC",
-        "drush/drush": "^12.5"
+        "drush/drush": "^12.5",
+        "learnfullabs/ginsynth": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
