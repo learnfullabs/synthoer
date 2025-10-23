@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36a1f8da4cc8c8eb0925798f2dca8b7b",
+    "content-hash": "692f9be1ac5aae13b189fd7bafce79f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3344,6 +3344,52 @@
                 "source": "https://github.com/learnfullabs/ginsynth"
             },
             "time": "2025-10-23T13:47:33+00:00"
+        },
+        {
+            "name": "learnfullabs/quizgen",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/learnfullabs/quizgen.git",
+                "reference": "394f048c429a3dff7154977c230b5b1f0cbd4d2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/learnfullabs/quizgen/zipball/394f048c429a3dff7154977c230b5b1f0cbd4d2d",
+                "reference": "394f048c429a3dff7154977c230b5b1f0cbd4d2d",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/ai": "^1.1",
+                "drupal/core": "^10.2 || ^11",
+                "php": ">=8.1"
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Learnful Labs",
+                    "homepage": "https://learnful.io"
+                }
+            ],
+            "description": "A Drupal module that integrates with the AI module to generate quiz content using AI providers with configurable parameters and Bloom's taxonomy support",
+            "homepage": "https://github.com/learnfullabs/quizgen",
+            "keywords": [
+                "ai",
+                "blooms-taxonomy",
+                "drupal",
+                "education",
+                "generator",
+                "module",
+                "quiz"
+            ],
+            "support": {
+                "issues": "https://github.com/learnfullabs/quizgen/issues",
+                "source": "https://github.com/learnfullabs/quizgen"
+            },
+            "time": "2025-10-23T14:14:21+00:00"
         },
         {
             "name": "masterminds/html5",

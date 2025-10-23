@@ -16,6 +16,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/learnfullabs/ginsynth"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/learnfullabs/quizgen"
         }
     ],
     "require": {
@@ -38,7 +42,8 @@
         "drupal/ultimate_cron": "^2.0@beta",
         "drupal/views_bootstrap": "^5.5@RC",
         "drush/drush": "^12.5",
-        "learnfullabs/ginsynth": "^1.0"
+        "learnfullabs/ginsynth": "^1.0",
+        "learnfullabs/quizgen": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
