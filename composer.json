@@ -20,6 +20,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/learnfullabs/quizgen"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/learnfullabs/quizren"
         }
     ],
     "require": {
@@ -43,7 +47,8 @@
         "drupal/views_bootstrap": "^5.5@RC",
         "drush/drush": "^12.5",
         "learnfullabs/ginsynth": "^1.0",
-        "learnfullabs/quizgen": "^1.0"
+        "learnfullabs/quizgen": "^1.0",
+        "learnfullabs/quizren": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
