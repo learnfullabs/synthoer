@@ -1,0 +1,20 @@
+uuid: fb84accf-f3c1-4e4d-b75b-25bfb64bce2d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ginsynth
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: ginsynth_local_actions
+theme: ginsynth
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

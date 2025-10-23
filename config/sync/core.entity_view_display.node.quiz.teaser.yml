@@ -1,0 +1,45 @@
+uuid: 1c82a0f7-c6a1-4dd0-baa1-13ce8120579f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.quiz.ai_automator_status
+    - field.field.node.quiz.field_cognitive_goal
+    - field.field.node.quiz.field_difficulty
+    - field.field.node.quiz.field_education_level
+    - field.field.node.quiz.field_number_of_questions
+    - field.field.node.quiz.field_quiz_data
+    - field.field.node.quiz.field_quiz_prompt
+    - field.field.node.quiz.field_subject
+    - field.field.node.quiz.field_tags
+    - node.type.quiz
+  module:
+    - user
+id: node.quiz.teaser
+targetEntityType: node
+bundle: quiz
+mode: teaser
+content:
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  ai_automator_status: true
+  field_cognitive_goal: true
+  field_difficulty: true
+  field_education_level: true
+  field_number_of_questions: true
+  field_quiz_data: true
+  field_quiz_prompt: true
+  field_subject: true

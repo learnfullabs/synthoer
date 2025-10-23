@@ -1,0 +1,22 @@
+uuid: 99a2c42f-8be5-4cbb-8ab6-166c3133827f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ginsynth
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: ginsynth_content
+theme: ginsynth
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

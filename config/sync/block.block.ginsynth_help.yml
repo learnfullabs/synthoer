@@ -1,0 +1,22 @@
+uuid: 19106a63-f38e-4f15-b77e-70821b03bf74
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ginsynth
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: ginsynth_help
+theme: ginsynth
+region: header
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

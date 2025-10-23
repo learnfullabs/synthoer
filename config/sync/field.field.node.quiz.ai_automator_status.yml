@@ -1,0 +1,22 @@
+uuid: b36d6245-17f0-4a16-b237-60e8cede7ff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.ai_automator_status
+    - node.type.quiz
+  module:
+    - options
+id: node.quiz.ai_automator_status
+field_name: ai_automator_status
+entity_type: node
+bundle: quiz
+label: 'AI Automator Status'
+description: ''
+required: true
+translatable: true
+default_value:
+  - pending
+default_value_callback: ''
+settings: {  }
+field_type: list_string

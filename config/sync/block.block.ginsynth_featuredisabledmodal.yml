@@ -1,0 +1,25 @@
+uuid: 11ee3943-111d-4d91-a8eb-c4a97db8cc6b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9abe291-e9bc-4423-92b8-e2ecf24e181d'
+  module:
+    - block_content
+  theme:
+    - ginsynth
+id: ginsynth_featuredisabledmodal
+theme: ginsynth
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f9abe291-e9bc-4423-92b8-e2ecf24e181d'
+settings:
+  id: 'block_content:f9abe291-e9bc-4423-92b8-e2ecf24e181d'
+  label: 'Feature Disabled Modal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

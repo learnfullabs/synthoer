@@ -1,0 +1,25 @@
+uuid: 1907bb8e-a8a4-4c30-9c9c-512e6a470797
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4f98e7cf-f95b-4701-a1b1-ee66a7353538'
+  module:
+    - block_content
+  theme:
+    - ginsynth
+id: ginsynth_loginmodal
+theme: ginsynth
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:4f98e7cf-f95b-4701-a1b1-ee66a7353538'
+settings:
+  id: 'block_content:4f98e7cf-f95b-4701-a1b1-ee66a7353538'
+  label: 'Login Modal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

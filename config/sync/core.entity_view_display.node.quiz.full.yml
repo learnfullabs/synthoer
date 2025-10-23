@@ -1,0 +1,241 @@
+uuid: 9d86dc41-c73a-438e-b219-dd03ee9ddb8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.quiz.ai_automator_status
+    - field.field.node.quiz.field_cognitive_goal
+    - field.field.node.quiz.field_difficulty
+    - field.field.node.quiz.field_education_level
+    - field.field.node.quiz.field_number_of_questions
+    - field.field.node.quiz.field_quiz_data
+    - field.field.node.quiz.field_quiz_prompt
+    - field.field.node.quiz.field_subject
+    - field.field.node.quiz.field_tags
+    - node.type.quiz
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-md-4: col-md-4
+              col-lg-3: col-lg-3
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-md-8: col-md-8
+              col-lg-9: col-lg-9
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - 'dynamic_block_field:node-quiz_page_metadata'
+        - 'dynamic_block_field:node-quiz_page_use'
+        - 'dynamic_block_field:node-quiz_page_remix'
+        - 'dynamic_block_field:node-quiz_page_actions'
+      right:
+        - group_render
+      bottom:
+        - links
+    fields:
+      'dynamic_block_field:node-quiz_page_actions':
+        plugin_id: 'dynamic_block_field:node-quiz_page_actions'
+        weight: 3
+        label: hidden
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: mb-4
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+      'dynamic_block_field:node-quiz_page_metadata':
+        plugin_id: 'dynamic_block_field:node-quiz_page_metadata'
+        weight: 0
+        label: hidden
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: mb-4
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+      'dynamic_block_field:node-quiz_page_remix':
+        plugin_id: 'dynamic_block_field:node-quiz_page_remix'
+        weight: 2
+        label: hidden
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: mb-4
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+      'dynamic_block_field:node-quiz_page_use':
+        plugin_id: 'dynamic_block_field:node-quiz_page_use'
+        weight: 1
+        label: hidden
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: mb-4
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+  field_group:
+    group_render:
+      children: {  }
+      label: Render
+      parent_name: ''
+      region: right
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: render
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.quiz.full
+targetEntityType: node
+bundle: quiz
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: bottom
+hidden:
+  ai_automator_status: true
+  field_cognitive_goal: true
+  field_difficulty: true
+  field_education_level: true
+  field_number_of_questions: true
+  field_quiz_data: true
+  field_quiz_prompt: true
+  field_subject: true
+  field_tags: true

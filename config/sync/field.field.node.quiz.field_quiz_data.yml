@@ -1,0 +1,19 @@
+uuid: 4e852b11-475f-406a-84e1-ce6b15451588
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quiz_data
+    - node.type.quiz
+id: node.quiz.field_quiz_data
+field_name: field_quiz_data
+entity_type: node
+bundle: quiz
+label: 'Quiz Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

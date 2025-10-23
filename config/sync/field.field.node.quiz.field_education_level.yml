@@ -1,0 +1,29 @@
+uuid: 4f657ba4-c9bd-4969-9438-201a1aca3170
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education_level
+    - node.type.quiz
+    - taxonomy.vocabulary.grade_levels
+id: node.quiz.field_education_level
+field_name: field_education_level
+entity_type: node
+bundle: quiz
+label: 'Education Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grade_levels: grade_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

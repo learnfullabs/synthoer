@@ -1,0 +1,29 @@
+uuid: 31f43752-13d4-4455-9c13-727cf1422cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_difficulty
+    - node.type.quiz
+    - taxonomy.vocabulary.difficulty
+id: node.quiz.field_difficulty
+field_name: field_difficulty
+entity_type: node
+bundle: quiz
+label: Difficulty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      difficulty: difficulty
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: difficulty
+field_type: entity_reference

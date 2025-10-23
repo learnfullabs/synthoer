@@ -1,0 +1,29 @@
+uuid: 0895b462-0920-4e73-9e2f-6d7ad9b683cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - quizgen
+title: 'Default cron handler'
+id: quizgen_cron
+weight: 0
+module: quizgen
+callback: 'quizgen#cron'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '*/15+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

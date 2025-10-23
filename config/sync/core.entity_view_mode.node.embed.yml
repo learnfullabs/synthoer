@@ -1,0 +1,11 @@
+uuid: d21439e9-27c6-4e19-a7a8-39e2a78de6c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.embed
+label: Embed
+description: ''
+targetEntityType: node
+cache: true

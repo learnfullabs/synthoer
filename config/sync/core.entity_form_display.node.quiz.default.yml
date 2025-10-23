@@ -1,0 +1,148 @@
+uuid: 817bc8de-64e3-4544-bb78-e0fe7e5c0a45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quiz.ai_automator_status
+    - field.field.node.quiz.field_cognitive_goal
+    - field.field.node.quiz.field_difficulty
+    - field.field.node.quiz.field_education_level
+    - field.field.node.quiz.field_number_of_questions
+    - field.field.node.quiz.field_quiz_data
+    - field.field.node.quiz.field_quiz_prompt
+    - field.field.node.quiz.field_subject
+    - field.field.node.quiz.field_tags
+    - node.type.quiz
+  module:
+    - path
+id: node.quiz.default
+targetEntityType: node
+bundle: quiz
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cognitive_goal:
+    type: entity_reference_autocomplete
+    weight: 127
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_difficulty:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_education_level:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_questions:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_quiz_data:
+    type: string_textarea
+    weight: 122
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_quiz_prompt:
+    type: string_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_subject:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  ai_automator_status: true

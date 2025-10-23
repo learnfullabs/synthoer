@@ -1,0 +1,29 @@
+uuid: cf838e05-846e-4ba6-b85f-2684234a541d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cognitive_goal
+    - node.type.quiz
+    - taxonomy.vocabulary.cognitive_goal
+id: node.quiz.field_cognitive_goal
+field_name: field_cognitive_goal
+entity_type: node
+bundle: quiz
+label: 'Cognitive Goal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cognitive_goal: cognitive_goal
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 41d4182d-b2ea-4e7d-ad17-8e68ae05000c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ginsynth
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: ginsynth_breadcrumbs
+theme: ginsynth
+region: header
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

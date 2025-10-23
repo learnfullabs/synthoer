@@ -1,0 +1,12 @@
+provider_id: openai
+model: gpt-5-mini
+temperature: 0.0
+max_tokens: 0
+default_prompt: "Generate a quiz with {num_questions} multiple-choice questions about {subject} at {difficulty} level. Each question should have {num_options} answer options with only one correct answer.\r\n\r\nPlease format the response as valid JSON with the following structure:\r\n{\r\n  \"title\": \"Quiz Title\",\r\n  \"subject\": \"{subject}\",\r\n  \"difficulty\": \"{difficulty}\",\r\n  \"questions\": [\r\n    {\r\n      \"question\": \"Question text here?\",\r\n      \"options\": [\r\n        \"Option A\",\r\n        \"Option B\",\r\n        \"Option C\",\r\n        \"Option D\"\r\n      ],\r\n      \"correct_answer\": 0,\r\n      \"explanation\": \"Brief explanation of why this is correct\"\r\n    }\r\n  ]\r\n}\r\n\r\nMake sure the questions are educational, accurate, and appropriate for the specified difficulty level. The correct_answer should be the index (0-based) of the correct option in the options array."
+default_subject: 'General Knowledge'
+default_difficulty: intermediate
+default_num_questions: 10
+default_num_options: 4
+timeout: 120
+cron_generation_enabled: true
+cron_generation_interval: 600

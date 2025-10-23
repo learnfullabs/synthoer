@@ -1,0 +1,9 @@
+uuid: c7deb023-8d5c-40af-8378-23c5fb0cd55d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cognitive Goal'
+vid: cognitive_goal
+description: null
+weight: 0
+new_revision: false

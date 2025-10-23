@@ -1,0 +1,81 @@
+uuid: 4e054bcf-af7f-474c-b0eb-82bc54e8a680
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.embed
+    - field.field.node.quiz.ai_automator_status
+    - field.field.node.quiz.field_cognitive_goal
+    - field.field.node.quiz.field_difficulty
+    - field.field.node.quiz.field_education_level
+    - field.field.node.quiz.field_number_of_questions
+    - field.field.node.quiz.field_quiz_data
+    - field.field.node.quiz.field_quiz_prompt
+    - field.field.node.quiz.field_subject
+    - field.field.node.quiz.field_tags
+    - node.type.quiz
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_render
+  field_group:
+    group_render:
+      children: {  }
+      label: Render
+      parent_name: ''
+      region: main
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: render
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.quiz.embed
+targetEntityType: node
+bundle: quiz
+mode: embed
+content: {  }
+hidden:
+  ai_automator_status: true
+  field_cognitive_goal: true
+  field_difficulty: true
+  field_education_level: true
+  field_number_of_questions: true
+  field_quiz_data: true
+  field_quiz_prompt: true
+  field_subject: true
+  field_tags: true
+  links: true
